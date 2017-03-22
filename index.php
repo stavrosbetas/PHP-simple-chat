@@ -4,15 +4,16 @@
 	$query = "SELECT * FROM shouts ORDER BY id DESC";
 	$shouts = mysqli_query($con, $query);
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Shout It!</title>
+    <title>Shout It!!!!!</title>
 	<link rel="stylesheet" text="text/css" href="css/style.css">
   </head>
   <body>
-	<div id="container">	
+	<div id="container">
 		<header><h1>Shout It</h1></header>
 		<div id="shouts">
 			<ul>
@@ -22,7 +23,7 @@
 			</ul>
 		</div>
 		<div id="input">
-		
+
 		<?php if(isset($_GET['error'])) :?>
 			<div class="error"><?php echo $_GET['error'] ;?></div>
 		<?php endif?>
